@@ -46,7 +46,7 @@ function clearActive() {
 function getWeather(latitude, longitude, units) {
     var xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid='+appid+'&units='+units, true);
+    xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid='+appid+'&units='+units, true);
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState != 4) return;
